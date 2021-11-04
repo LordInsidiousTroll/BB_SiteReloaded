@@ -1,0 +1,202 @@
+﻿
+.homepageTitle {
+    text-align: center;
+}
+
+/* #region Four button links */
+
+#wrapper {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+    #wrapper a {
+        text-decoration: none !important;
+    }
+
+#grid {
+    display: grid;
+    height: 200px;
+    width: 67vw;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.homepageButtonContainer-button {
+    display: -webkit-flex;
+    display: flex;
+    height: 250px;
+    width: 15vw;
+    background: #485563;
+    background: linear-gradient( 90deg,#ff4136,#c4121e);
+    border-radius: 5px;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    opacity: .9;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+}
+
+    .homepageButtonContainer-button .name {
+        color: #fff;
+        font-weight: 700;
+    }
+
+.logo-service {
+    margin-top: 40px;
+    width: 90%;
+    height: 150px;
+    padding: 5px;
+    background-position: 50% !important;
+    border-radius: 10px !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+
+#discord {
+    background: url(/Content/discord_logo.png);
+}
+
+#teamspeak {
+    background: url(/Content/ts_logo.png);
+}
+
+#fittings {
+    background: url(https://web.ccpgamescdn.com/newssystem/media/67350/1/36381_Nemesis_Intaki_Syndicate.png);
+}
+
+#care {
+    background: url(https://imageserver.eveonline.com/Type/2048_64.png);
+}
+
+.name {
+    margin-bottom: .2rem;
+}
+
+/* #endregion */
+
+/* #region How to join fleet*/
+
+@media (prefers-color-scheme: dark){
+    .howToJoinOuter {
+        background: linear-gradient( 90deg,#ff4136,#c4121e);
+    }
+}
+
+.howToJoinOuter {
+    background-color: #f8f8f8;
+}
+
+@media (prefers-color-scheme: dark){
+    .howToJoinContents, .howToJoinInner {
+        color: #e3e3e3 !important;
+    }
+}
+
+.howToJoinInner {
+    padding: 30px 15px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #c4121e;
+}
+
+.howToJoinContents {
+    color: #000;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+.table {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+/* #endregion*/
+
+.tableList {
+    list-style: none;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tableList h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #c4121e;
+    letter-spacing: -.042em;
+    font-weight: 400;
+}
+
+.tableContents {
+    text-align: left;
+    margin-top: 5px;
+}
+
+ul.tableList li:first-child:before {
+    top: 6px;
+}
+
+ul.tableList li:before {
+    content: "";
+    position: absolute;
+    left: -16px;
+    border-left: 1px dotted #000;
+    height: 100%;
+    width: 1px;
+}
+
+ul.tableList li:after {
+    content: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/RedDisc.svg/20px-RedDisc.svg.png);
+    position: absolute;
+    left: -26px;
+    top: 0;
+}
+
+li, p {
+    text-align: left;
+}
+
+ul.tableList li {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 1em;
+}
+
+
+/* #region Doctrine */
+
+.doctrineTitle {
+    padding: 0;
+}
+
+/* #endregion */

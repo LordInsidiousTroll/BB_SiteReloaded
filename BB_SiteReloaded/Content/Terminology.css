@@ -1,0 +1,52 @@
+﻿@media (prefers-color-scheme: dark){
+    .terminologyContainer {
+        border-bottom: 1px solid #c7151f;
+        border-left: 1px solid #c7151f;
+        border-right: 1px solid #c7151f;
+    }
+}
+
+.terminologyContainer {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+    /*border: 1px solid #ccc;*/
+    border-top: none;
+    border-radius: 4px;
+    box-shadow: 0 0.15em 0.35em 0 rgb(0 0 0 / 14%);
+}
+
+.terminologyData {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3rem;
+}
+
+.terminologyHeader {
+    text-align: left;
+    margin-bottom: .2rem;
+}
+
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+
+li, p {
+    text-align: left;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+ul {
+    list-style-type: disc;
+}

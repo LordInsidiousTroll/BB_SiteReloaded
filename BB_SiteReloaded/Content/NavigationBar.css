@@ -1,0 +1,54 @@
+﻿.navigationBar {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .navigationBar ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 2.5rem;
+        float: right;
+    }
+
+        .navigationBar ul li {
+            display: inline;
+            padding: 10px 10px;
+        }
+
+            .navigationBar ul li a {
+                text-decoration: none;
+                color: hsl(0,100%,32%);
+            }
+
+    .navigationBar h2 a {
+        color: hsl(0,100%,32%);
+        text-decoration: none;
+    }
+
+.bblogo {
+    height: 100px;
+    width: 100px;
+    display: inline;
+}
+
+.bbName {
+    margin-left: 2rem;
+    vertical-align: 2.5rem;
+    display: inline;
+}
+
+.logoName {
+    float: left;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    .navigationBar ul li a {
+        color: #fff !important;
+    }
+
+    .navigationBar h2 a {
+        color: #fff !important;
+    }
+}

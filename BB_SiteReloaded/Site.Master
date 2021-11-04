@@ -8,12 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bombers Bar</title>
 
-    <asp:PlaceHolder runat="server">
+    <%--<asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
-    <webopt:bundlereference runat="server" path="~/Content/css" />
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <webopt:bundlereference runat="server" path="~/Content/css" />--%>
+    <%--<link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />--%>
+    <link href="/Content/Main.css" rel="stylesheet" type="text/css"/>
+    <link href="/Content/NavigationBar.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/App.css" rel="stylesheet" type="text/css" />
 
 </head>
 <body>
@@ -37,33 +40,58 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-
-        <%--Navigation bar stuff--%>
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
+        
+        <div class="App">
+            <div class="App-header">
+                <%--Navigation bar stuff--%>
+                <div class="navbar navbar-inverse navbar-fixed-top">
+                    <div class="container">
+                        <%--<div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" runat="server" href="~/">Application name</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
-                    </ul>
+                </div>--%>
+                        <div class="navigationBar">
+                            <h2>
+                                <a class="logoName" href="/">
+                                    <img class="bblogo" src="/Content/BB_Logo.png" />
+                                    <span class="bbName">Bombers Bar</span>
+                                </a>
+                            </h2>
+                            <ul>
+                                <%--<li><a href="/">Home</a></li>
+                                <li><a href="/About">About</a></li>
+                                <li><a href="/Contact">Contact</a></li>--%>
+                                <li><a href="/FAQ">FAQ</a></li>
+                                <li><a href="/Must-Watch">Must Watch</a></li>
+                                <li><a href="/Fittings">Fittings</a></li>
+                                <li><a href="/Terminology">Terminology</a></li>
+                                <li><a href="/Bingo">Bingo</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
+
+            <div class="infoBox">
+                <div class="infoBoxText">
+                    <img src="https://imageserver.eveonline.com/Type/27916_32.png" alt="bomb">
+                    To provide great bombing fleets&nbsp;
+                    <strong>Bombers Bar </strong>
+                     &nbsp;needs your intel so please help us.
+                </div>
+                <a href="https://forms.gle/nVRpEMr6ojmr52ir7" target="_blank" rel="noopener noreferrer">Bombing Intel</a>
+            </div>
+            <div class="container body-content">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                <p>&copy; <%: DateTime.Now.Year %> - The Bombers Bar, Ticker: FVB</p>
             </footer>
         </div>
 

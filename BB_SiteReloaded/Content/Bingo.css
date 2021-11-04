@@ -1,0 +1,69 @@
+﻿textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+
+table {
+    border-bottom: 1px solid #ededed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 14px;
+    line-height: 2;
+    margin: 0 0 20px;
+    width: 100%;
+}
+
+
+
+td {
+    border: 1px solid #ededed;
+    padding: 6px 10px;
+}
+
+
+
+/* styles */
+th {
+    font-size: 40px;
+    text-align: center;
+    color: #196a8d;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+    width: 20%;
+    height: 150px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    cursor: hand;
+}
+
+    td.black {
+        color: #FFF;
+        background-color: #000;
+        background-image: url('../images/black-brave.png');
+        background-size: cover;
+        background-position: center left;
+    }
+
+/* layers */
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+#contTable {
+    width: 100%;
+}
+
+.fkup {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
